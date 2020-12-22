@@ -1,0 +1,16 @@
+
+body {
+    /* podemos llamar a la variable color porque en el html la declaración del archivo paypal.css debe ir despues del archivo estilos.css que es donde 
+    se declararo las variables */
+    background-color: var(--black-color);
+    text-align: center;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* para tomar todo el tamañp de la pantalla */
+}
+
+.conent_paypal a {
+    color: var(--green-color);
+}

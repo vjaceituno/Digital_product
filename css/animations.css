@@ -1,0 +1,67 @@
+
+/* Archivo de animaciones  */
+
+.fadeIn {
+    /* -webkit-: asegura que todos los valores se puedan cumplir, un pack para acoplar las animaciones a 
+    navegadores web antiguos y modernos. */
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  /* con both se cumplen los keyframe de ida y de regreso */
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0); /* transform ayuda a animar elementos de CSS, el -100 hace que vaya desde  arriba hacia abajo */
+        transform: translate3d(0,-100%,0); 
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0); /* en cero 0 es su posición original */
+        transform: translate3d(0,0,0); 
+    }
+}
+
+
+.fadeInUp {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0); /* transform ayuda a animar elementos de CSS, el -100 hace que vaya desde  arriba hacia abajo */
+        transform: translate3d(0,100%,0); 
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0); /* en cero 0 es su posición original */
+        transform: translate3d(0,0,0); 
+    }
+}
